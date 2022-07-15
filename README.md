@@ -1,19 +1,18 @@
 # Japanese Movie Recommendation Dialogue #
 
 ### Overview ###
-This is a Japanese knowledge-grounded dialogue dataset about the movie recommendation between humans.
-Every recommender's utterance in dialogues is associated with the movie information as external knowledge.
-The external knowledge used in this dataset is hierarchically structured into knowledge types common to all movies (e.g., "Title", "Released Year") and knowledge contents for each movie (e.g., "Rise of Planet of the Apes", "August 5, 2011").
+This is a Japanese knowledge-grounded dialogue dataset consisting of annotated movie recommendation dialogues between humans.
+Every recommender's utterance is associated with movie information as external knowledge.
+Movie information is structured in a dictionary format that maps knowledge types (e.g., "Title", "Released Year") into corresponding knowledge contents (e.g., "Rise of Planet of the Apes", "August 5, 2011").
 
-This dataset consists of about 5,000 dialogues between crowdworkers, and each dialogue consists of 23 utterances on average.
+The dataset consists of about 5,000 dialogues between crowdworkers, each of which consists of 23 utterances on average.
 Some dialogues contain the results of post-task questionnaires conducted for the dialogue participants.
-
 
 ### Files ###
 The `data` directory contains the following files
-- `{train/valid/test}.json`: All dialogues in this dataset divided into the train (4,575 dialogues), valid (200 dialogues), and test sets (300 dialogues).
+- `{train/valid/test}.json`: All dialogues in this dataset, divided into the train (4,575 dialogues), valid (200 dialogues), and test sets (300 dialogues).
 
-Note that the number of dialogs and data splitting is different from the reference papers.
+Note that the number of dialogues and data splitting is different from the reference papers.
 
 ### Format ###
 Each file has the following format.
@@ -102,7 +101,7 @@ Each file has the following format.
 - `dialog_id`: unique dialogue ID.
 - `movie_title`: movie title recommended in the dialogue.
 - `first_speaker`: The first speaker of that dialogue. It is either `seeker` or `recommender`.
-- `questionnaire`: The results of the post-task questionnaires for the recommender and the seeker. All questions are answered on a 5-point Likert scale, with five being the best and one being the worse. `-1` indicates a missing answer to that question.
+- `questionnaire`: The results of the post-task questionnaires for the recommender and the seeker. All questions are answered on a 5-point Likert scale, with five being the best and one being the worst. `-1` indicates a missing answer to that question.
   - `Q1`: Do you like movies?
   - `Q2`: Did you enjoy the dialogue?
   - `Q3`: Do you know the movie you recommended (or that was recommended to you)?
@@ -120,7 +119,7 @@ Each file has the following format.
 - Takashi Kodama, Ribeka Tanaka, and Sadao Kurohashi: Construction of Hierarchical Structured Knowledge-based Recommendation Dialogue Dataset and Dialogue System, In Proceedings of The 2nd DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering, Dublin, Ireland / Online, 2022. https://aclanthology.org/2022.dialdoc-1.9/
 
 ###  Acknowledgment ###
-This construction of this dataset was supported by NII CRIS collaborative research program operated by NII CRIS and LINE Corporation. This work was also supported by JST, CREST Grant Number JPMJCR20D2, Japan.
+The construction of this dataset was supported by NII CRIS collaborative research program operated by NII CRIS and LINE Corporation. This work was also supported by JST, CREST Grant Number JPMJCR20D2, Japan.
 
 ### License ###
 CC-BY-SA 4.0
