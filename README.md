@@ -116,7 +116,7 @@ Each file has the following format.
 
 ### References ###
 - 児玉貴志, 田中リベカ, 黒橋禎夫: 外部知識に基づく発話生成に向けた日本語映画推薦対話データセットの構築, 言語処理学会第27回年次大会 (NLP 2021), 北九州, 2021. https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/B5-3.pdf
-- Takashi Kodama, Ribeka Tanaka, and Sadao Kurohashi: Construction of Hierarchical Structured Knowledge-based Recommendation Dialogue Dataset and Dialogue System, In Proceedings of The 2nd DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering, Dublin, Ireland / Online, 2022. https://aclanthology.org/2022.dialdoc-1.9/
+- Takashi Kodama, Ribeka Tanaka, and Sadao Kurohashi: Construction of Hierarchical Structured Knowledge-based Recommendation Dialogue Dataset and Dialogue System, In Proceedings of The 2nd DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering, pp.83-92, Dublin, Ireland, 2022. https://aclanthology.org/2022.dialdoc-1.9/
 
 ###  Acknowledgment ###
 The construction of this dataset was supported by NII CRIS collaborative research program operated by NII CRIS and LINE Corporation. This work was also supported by JST, CREST Grant Number JPMJCR20D2, Japan.
